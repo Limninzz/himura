@@ -10,9 +10,9 @@
   <link rel="shortcut icon" href="./assets/img/LogoOpac.png" type="image/x-icon">
 
 </head>
-<body>
+<body onload="playsound()">
     <header>
-      <audio id="myaudio" autoplay loop >
+      <audio id="myaudio" autoplay loop>
         <source src="./assets/backsound.mp3" type="audio/mpeg">
       </audio>
       <nav class="navbar">
@@ -103,8 +103,10 @@
       </div>
     </footer>
   <script>
-     let audio = document.getElementById("myaudio");
+     playsound = () => {
+      let audio = document.getElementById("myaudio");
          audio.volume = 0.1;
+     }
   </script>
   </body>
 </html>
