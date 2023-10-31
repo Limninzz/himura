@@ -1,0 +1,47 @@
+@media all and (max-width: 670px) {
+    .header-right {
+        display:none;
+    }
+    .menu-icon {
+        display:inline-block;
+        padding:10px 30px;
+    }
+    .navbar {
+        display:flex;
+        justify-content: space-between;
+    }
+    .judul{ 
+        font-size:50px; 
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .proyek {
+        margin-top:50px;
+    }
+    .wadah {
+        flex-direction:column;
+    }
+    .wadah img {
+        width:200px;
+    }
+    .container {
+        flex-direction:column;
+    }
+    .container .p1 {
+        text-align:center;
+        margin:0;
+        padding:5px 0;
+    }
+    .references{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .references a {
+        padding:0 5px;
+    }
+    .contact form input, .contact form textarea { 
+        width:250px;
+    }
+    .contact button {
+        width:150px; 
+    }
+}
