@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Best project">
+    <meta name="keywords" content="Project, Himura">
+    <meta name="author" content="Himura">
+    <title>Projects</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/responsive.css">
+    <link rel="shortcut icon" href="./assets/img/LogoOpac.png" type="image/x-icon">
+</head>
+<style>
+.service-content, .product-content {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+.highlight {
+    text-align: center;
+}
+</style>
+<body>
+    <header>
+        <!-- <audio id="myaudio" autoplay loop controls hidden>
+          <source src="./assets/backsound.mp3" type="audio/mpeg">
+        </audio> -->
+        <nav class="navbar">
+          <div class="header-left">
+            <div>
+              <a href="index.html"><p>HIMURA</p></a>
+            </div>
+            <span class="fa fa-bars menu-icon">
+            </span>
+            <div class="header-left-menu">
+              <a href="about.html">Tentang Kami</a>
+              <a href="#">Proyek Kami</a>
+              <a href="customer.html">Customers</a>
+              <a href="#" onclick="showContact()">Hubungi Kami</a>
+            </div>
+          </div>
+          <div class="header-right">
+            <a href="about-en.html" class="btn-lang eng"><img src="./assets/img/engFlag.png" alt="Eng Flag.png"></a>
+          </div>
+        </nav>
+    </header>
+    <div class="frame"><br><br><br>
+        <div class="service">
+            <p class="highlight">Layanan Kami</p>
+            <div class="wadah service-content">
+                <a href="#"><img src="./assets/img/service2.png" alt="service2.png"></a>
+                <a href="#"><img src="./assets/img/service2.png" alt="service2.png"></a>
+                <a href="#"><img src="./assets/img/service2.png" alt="service2.png"></a>
+                <a href="#"><img src="./assets/img/service2.png" alt="service2.png"></a>
+                <a href="#"><img src="./assets/img/service2.png" alt="service2.png"></a>
+                <a href="#"><img src="./assets/img/service2.png" alt="service2.png"></a>
+            </div>
+        </div>
+        <div class="product"><br><br><br>
+            <p class="highlight">Produk Kami</p>
+            <div class="wadah product-content">
+                <a href="#"><img src="./assets/img/product2.png" alt="product2.png"></a>
+                <a href="#"><img src="./assets/img/product2.png" alt="product2.png"></a>
+                <a href="#"><img src="./assets/img/product2.png" alt="product2.png"></a>
+                <a href="#"><img src="./assets/img/product2.png" alt="product2.png"></a>
+                <a href="#"><img src="./assets/img/product2.png" alt="product2.png"></a>
+                <a href="#"><img src="./assets/img/product2.png" alt="product2.png"></a>
+            </div>
+        </div>
+        <div class="machine"><br><br><br>
+            <p class="highlight">Mesin Kami</p>
+            <div class="wadah product-content">
+                <a href="#"><img src="./assets/img/machine2.png" alt="machine2.png"></a>
+                <a href="#"><img src="./assets/img/machine2.png" alt="machine2.png"></a>
+                <a href="#"><img src="./assets/img/machine2.png" alt="machine2.png"></a>
+                <a href="#"><img src="./assets/img/machine2.png" alt="machine2.png"></a>
+                <a href="#"><img src="./assets/img/machine2.png" alt="machine2.png"></a>
+                <a href="#"><img src="./assets/img/machine2.png" alt="machine2.png"></a>
+            </div><br><br><br>
+        </div>
+    </div>
+    <div id="contact" class="cover-banner" style="display: none;">
+      <div class="contact-container">
+        <div class="contact wrapper">
+            <div class="contact">
+                <p class="highlight" style="margin-bottom: 0px; text-align:center;"><b>Hubungi Kami</b></p>
+                <img onclick="closeContact()" src="./assets/img/close.png" alt="close.png">
+                <form action="#">
+                  <input type="text" placeholder="Email (Diperlukan)">
+                  <textarea rows="2" placeholder="Message (Diperlukan)"></textarea>
+                  <button type="button">Kirim</button>
+                </form>
+            </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+        <div class="rounded-social-buttons">
+          <a class="social-button facebook" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a class="social-button twitter" href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a class="social-button linkedin" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a class="social-button youtube" href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a class="social-button instagram" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+      </footer>
+</body>
+<script>
+    showContact = () => {
+    let contact = document.getElementById("contact"); 
+    contact.style.display = "flex";
+    }
+    closeContact = () => {
+    let contact = document.getElementById("contact"); 
+    contact.style.display = "none";
+    }
+  </script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script> 
+  </html>
