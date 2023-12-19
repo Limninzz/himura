@@ -12,12 +12,27 @@
     <link rel="shortcut icon" href="./assets/img/LogoOpac.png" type="image/x-icon">
 </head>
 <style>
+.index-title {
+  background-image: url(./assets/img/about-us.png);
+}
+.index-logo.title {
+  width: 150px;
+  position: relative;
+}
+.index-logo.title:hover {
+  filter: none;
+  top: 10px;
+  left: 10px;
+}
 .orgTree img {
     width: 65%;
 }
+.legalities > p {
+  padding-left: 5.5em;
+}
 .legalities > iframe {
-    width: 60%;
-    height: 450px;
+    width: 42rem;
+    height: 60vh;
     border: 2px solid aqua;
 }
 iframe {
@@ -30,93 +45,127 @@ iframe {
 .location {
   text-align: center;
 }
+.running-img {
+  position: relative;
+  bottom: 60%;
+  right: 0;
+  left: 18em;
+  text-align: center;
+}
+.running-img > marquee {
+  background: #c0c0c094;
+  border-radius: 15px;
+  max-width: 55em;
+}
+marquee > * {
+  padding: 0 20px;
+}
+#history > img {
+  position: relative;
+  z-index: 1;
+  top: 5em;
+  width: 100%;
+  left: 20px;
+}
 </style>
-<body>
-    <header>
-        <!-- <audio id="myaudio" autoplay loop controls hidden>
-          <source src="./assets/backsound.mp3" type="audio/mpeg">
-        </audio> -->
-        <nav class="navbar">
-          <div class="header-left">
-            <div>
-              <a href="index.html"><p>HIMURA</p></a>
-            </div>
-            <span class="fa fa-bars menu-icon">
-            </span>
-            <div class="header-left-menu">
-              <a href="#">Tentang Kami</a>
-              <a href="project.html">Proyek Kami</a>
-              <a href="customer.html">Customers</a>
-              <a href="#" onclick="showContact()">Hubungi Kami</a>
-            </div>
-          </div>
-          <div class="header-right">
-            <a href="about-en.html" class="btn-lang eng"><img src="./assets/img/engFlag.png" alt="Eng Flag.png"></a>
-          </div>
-        </nav>
-    </header>
-    <div class="frame">
-      <div class="orgTree">
-        <p class="content-title">STRUKTUR ORGANISASI</p>
-        <br>
-        <img src="./assets/img/orgTree.png" alt="orgTree.png">
-    </div>
-    <!-- <div class="legalities">
-        <p class="content-title">OUR LEGALITIES</p>
-        <br>
-        <img class="npwp wrapper" src="./assets/img/npwp.png" alt="npwp.png">
-        <br> <br> <br> <br>
-        <img class="NIB wrapper" src="./assets/img/NIB.png" alt="NIB.png">
-        <br> <br> <br> <br>
-        <img class="NIB2 wrapper" src="./assets/img/NIB2.png" alt="NIB2.png">
-    </div> -->
-    <div class="legalities">
-        <p class="content-title">OUR LEGALITIES</p> <br>
-        <iframe src="./references/legalities.html" frameborder="0"></iframe>
-    </div><br>
-    <div class="facility">
-        <p class="content-title">OUR FACILITY</p> <br>
-        <img class="facility-content wrapper" src="./assets/img/facility.png" alt="">
-    </div><br><br>
-    <div class="location">
-      <p class="content-title">OUR LOCATION</p> <br>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d495.69251938374185!2d107.34499006357537!3d-6.323965217600796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e696d16348d4aed%3A0x4ce930a6611234c5!2sPT%20HIMURA%20ENGINEERING%20INDONESIA!5e0!3m2!1sid!2sid!4v1700662853710!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div><br><br><br><br>
-    <div id="contact" class="cover-banner" style="display: none;">
-      <div class="contact-container">
-        <div class="contact wrapper">
-            <div class="contact">
-                <p class="highlight" style="margin-bottom: 0px; text-align:center;"><b>Hubungi Kami</b></p>
-                <img onclick="closeContact()" src="./assets/img/close.png" alt="close.png">
-                <form action="#">
-                  <input type="text" placeholder="Email (Diperlukan)">
-                  <textarea rows="2" placeholder="Message (Diperlukan)"></textarea>
-                  <button type="button">Kirim</button>
-                </form>
-            </div>
+<body onload="playsound()" style="overflow-x:hidden;">
+  <header>
+    <audio id="myaudio" autoplay loop controls hidden>
+      <source src="./assets/backsound.mp3" type="audio/mpeg">
+    </audio>
+    <nav class="navbar">
+      <div class="header-left">
+        <div>
+          <a href="index.html"><p>HIMURA</p></a>
         </div>
+        <span class="fa fa-bars menu-icon">
+        </span>
+      </div>
+      <div class="header-right">
+        <div class="header-right-menu">
+          <a href="about.html">Tentang Kami</a>
+          <a href="project.html">Proyek Kami</a>
+        </div>
+        <a href="index-en.html" class="btn-lang eng"><img src="./assets/img/engFlag.png" alt="Eng Flag.png"></a>
+      </div>
+    </nav>
+  </header>
+  <div class="index-title">
+    <div class="legalities">
+      <p class="content-title">OUR LEGALITIES</p> <br>
+      <iframe src="./references/legalities.html" frameborder="0"></iframe>
+    </div><br>
+    <div class="running-img">
+      <img class="index-logo title" src="./assets/img/LogoOpac.png" alt="CompnayLogo.png" style="padding:0" onclick="showHistory()"><br><br><br>
+      <p class="content-title">TRUSTED BUSINESS PARTNERS</p><br><br><br>
+      <marquee behavior="scroll" direction="left">
+        <img class="img-1" src="./assets/img/logoPartner/elastomix.png" width="120" height="80" alt="elastomix.png" />
+        <img class="img-2" src="./assets/img/logoPartner/fineSinter.png" width="120" height="80" alt="fineSinter.png" />
+        <img class="img-3" src="./assets/img/logoPartner/glovis.png" width="240" height="60" alt="glovis.png" style="margin-bottom: 10px"/>
+        <img class="img-5" src="./assets/img/logoPartner/haritsindo.png" width="120" height="80" alt="haritsindo.png" />
+        <img class="img-6" src="./assets/img/logoPartner/nipponSteel.png" width="240" height="80" alt="nipponSteel.png" />
+        <img class="img-7" src="./assets/img/logoPartner/oneject.png" width="120" height="80" alt="oneject.png" />
+        <img class="img-8" src="./assets/img/logoPartner/yamaha.png" width="240" height="80" alt="yamaha.png" />
+        <img class="img-4" src="./assets/img/logoPartner/hyundaiTransys.png" width="240" height="80" alt="hyundaiTransys.png" />
+        <img class="img-9" src="./assets/img/logoPartner/wilmar.png" width="120" height="80" alt="wilmar.png" />
+        <img class="img-10" src="./assets/img/logoPartner/wika.png" width="120" height="80" alt="wika.png" />
+        <img class="img-11" src="./assets/img/logoPartner/rhino.png" width="120" height="80" alt="rhino.png" />
+        <img class="img-12" src="./assets/img/logoPartner/tjokro.png" width="120" height="80" alt="tjokro.png" />
+        <img class="img-13" src="./assets/img/logoPartner/srm.png" width="120" height="80" alt="srm.png" />
+        <img class="img-14" src="./assets/img/logoPartner/glicoWings.png" width="240" height="80" alt="glicoWings.png" />
+      </marquee>
+    </div>
+  </div><br>
+  <div id="history" class="cover-banner" style="height:120%; display:none;">
+    <img src="./assets/img/history.png" alt="history.png" onclick="hideHistory()">
+  </div><br><br>
+  <footer>
+    <div class="summary global">
+      <div class="summary-title global">
+        <img class="index-logo" src="./assets/img/LogoOpac.png" alt="CompnayLogo.png">
+        <h1 class="judul global">PT HIMURA ENGINEERING INDONESIA</h1>
+      </div>
+      <p>
+          General Suplier, Fabrication, Preventive, Overhould, Rewinding
+          Spesial Pupose Machine, Special Custom Part
+          Pneumatic, Hydrolic, Electrical
+      </p>
+    </div>
+    <div class="rounded-social-buttons global">
+      <div>
+        <a class="social-button whatsapp" href="https://wa.me/+6287779055387" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <p>+62 877 7905 5387 / +62 851 5969 0059</p>
+      </div>
+      <div>
+        <a class="social-button envelope" href="mailto:sales@himura.com" target="_blank"><i class="fas fa-envelope"></i></a>      
+        <p>sales@himura.co.id</p>
+      </div>
+      <div>
+        <a class="social-button location" href="#" target="_blank"><i class="fas fa-map-marker-alt"></i></a>      
+        <p>Citra Swarna Pratama Blok A4 No. 11
+        Desa Bengle - Majalaya - Karawang</p>
       </div>
     </div>
+    <div class="footer-info">
     </div>
-    <footer>
-      <div class="rounded-social-buttons">
-        <a class="social-button facebook" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <a class="social-button twitter" href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a class="social-button linkedin" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a class="social-button youtube" href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
-        <a class="social-button instagram" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-      </div>
-    </footer>
+    <div class="location">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d495.69251938374185!2d107.34499006357537!3d-6.323965217600796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e696d16348d4aed%3A0x4ce930a6611234c5!2sPT%20HIMURA%20ENGINEERING%20INDONESIA!5e0!3m2!1sid!2sid!4v1700662853710!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </footer>
 </body>
 <script>
-  showContact = () => {
-  let contact = document.getElementById("contact"); 
-  contact.style.display = "flex";
-  }
-  closeContact = () => {
-  let contact = document.getElementById("contact"); 
-  contact.style.display = "none";
-  }
+playsound = () => {
+let audio = document.getElementById("myaudio");
+    audio.volume = 0.1;
+}
+showHistory = () => {
+let history = document.getElementById("history"); 
+history.style.display = "block";
+}
+hideHistory = () => {
+let history = document.getElementById("history"); 
+history.style.display = "none";
+}
 </script>
 <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script> 
 </html>
