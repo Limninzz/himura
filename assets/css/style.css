@@ -9,19 +9,13 @@ body {
   /* background-image: url(../img/list_bg.jpg); */
 }
 .frame {
-  padding: 0 180px;
+  padding: 0 11.25rem;
 }
 header {
   top: 0;
   width: 100%;
   position :fixed;
   z-index: 2;
-}
-footer {
-  position: absolute;
-  bottom: 0;
-  margin-bottom: -10em;
-  /* background-color:rgb(41 114 193); */
 }
 .navbar {
   display: flex;
@@ -77,15 +71,19 @@ nav .header-right * {
 nav .header-right-menu * {
   padding: 30px 20px;
 }
-
 nav .header-right-menu *:hover {
   color:#333;
   background:azure;
 }
-
 .header-right {
   position: relative;
   right: 3em;
+}
+.header-mid {
+  display:none;
+}
+.header-mid > a {
+  color: snow;
 }
 .btn-lang {
   position: relative;
@@ -101,9 +99,6 @@ nav .header-right-menu *:hover {
   width:100px;
   filter: drop-shadow(10px 10px 1px black);
   padding-right: 20px;
-}
-.menu-icon {
-  display:none;
 }
 .index-title {
   background-repeat: no-repeat;
@@ -153,11 +148,7 @@ nav .header-right-menu *:hover {
   padding: 5px;
   position: relative;
 }
-/* .aboutme {
-  background-color: rgb(56 154 209);
-  text-align: center;
-  border: 1px solid snow;
-} */
+
 .about-wrapper, .aboutme {
   border-radius: 15px;
 }
@@ -167,10 +158,13 @@ nav .header-right-menu *:hover {
   justify-content: space-evenly;
 }
 
-.wadah img {
-  width: 250px;
+.wadah img, .wadah video {
+  width: 16rem;
   border-radius: 10px;
   transition: 0.5s;
+  border: 2px solid aquamarine;
+  filter: drop-shadow(5px 5px 5px aqua);
+  height: 15rem;
 }
 .wadah img:hover {
   transform: translateY(15px);
@@ -296,6 +290,7 @@ vertical-align: 3px;
 }
 footer {
   display: flex;
+  position: absolute;
   align-items: center;
   background-color: rgb(70 73 75);
   gap: 5px;
@@ -439,4 +434,15 @@ filter: drop-shadow(1px 3px 1px black);
 
 .orgTree, .legalities, .facility {
 padding: 25px 0px;
+}
+
+/* Project.html all references */
+.inner-content {
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+  gap: 3rem;
+  display: flex;
+  justify-content: center;
 }

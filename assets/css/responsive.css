@@ -1,50 +1,164 @@
-@media all and (max-width: 670px) {
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    /* GENERAL STYLING */
+    .header-left > #header-title > a {
+        display: none;
+    }
+    .header-mid {
+        display: block; 
+        margin: auto; 
+    }
+    .header-mid > * {
+        padding: 1rem;
+    }
     .header-right {
         display:none;
     }
-    .menu-icon {
-        display:inline-block;
-        padding:10px 30px;
+    footer {
+        bottom: unset;
+        padding: 0 1rem;
     }
-    .navbar {
-        display:flex;
-        justify-content: space-between;
+    .footer-left {
+        display: none;
     }
-    .judul{ 
-        font-size:50px; 
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    .footer-mid {
+        gap: 0rem;
     }
-    .proyek {
-        margin-top:50px;
+    .footer-mid > div {
+        align-items: center;
+        gap: 25px;
     }
-    .wadah {
-        flex-direction:column;
+    .footer-mid > div > p {
+        margin: 0;
+        max-width: 12rem;
     }
-    .wadah img {
-        width:200px;
+    footer .location > iframe {
+        width: 18rem;
+        margin: 10px 0;
     }
-    .container {
-        flex-direction:column;
+    .row {
+        --bs-gutter-x: 0rem;
     }
-    .container .p1 {
-        text-align:center;
-        margin:0;
-        padding:5px 0;
+
+    /*index.html*/ 
+    #index-body {
+        overflow-y: scroll; 
     }
-    .references{
-        flex-direction: row;
+    .index-container {
+        margin: 3rem 0.5rem;
+    }
+    .index-title {
+        padding-top: 1rem;
+    }
+    .index-logo {
+        width: 5rem;
+        position: relative;
+        left: 2rem;
+    }
+    .judul {
+        font-size: 1.5rem;
+        /* left: -3rem; */
+        position: relative;
+    }
+    .index-aboutme {
+        max-width: 17em;
+    }
+    .index-content {
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+    .index-aboutme > p{
+        padding: 5px 10px !important;
+        font-size: 14px !important;
+        margin: auto;
+    }
+    #social-button {
+        border:1px solid aquamarine;
+        background: #32586d;
+        border-radius: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        filter: drop-shadow(1px 1px 10px aqua);
+        margin: 1rem;
+    }
+    .frame {
+        padding: 0 0.5rem;
+    }
+    .frame .summary > p {
+        font-size: 1rem;
+    }
+    .proyek {   
         justify-content: center;
     }
-    .references a {
-        padding:0 5px;
+    .menu > a > * {
+        width: 5.75rem;
+        height: 8rem;
     }
-    .contact-wrapper {
-        width:75%;
+    .index-summary {
+        font-size: 1rem;
+        margin-top: -4rem;
     }
-    .contact form input, .contact form textarea { 
-        width:250px;
+    /*index.html*/
+
+    /* about.html */
+    #about-container {
+        margin: 0;
     }
-    .contact button {
-        width:130px; 
+    .about-content {
+        padding-top: 3rem;
     }
+    #legalities {
+        width: 20rem;
+        height: 35vh;
+    }
+    .about-logo {
+        width: 4rem;
+        filter: drop-shadow(5px 5px 1px black);
+    }
+    .about-logo.web {
+        display: none;
+    }
+    .about-logo.mobile {
+        display: inline !important;
+    }
+    #history_mobile > img {
+        width: -webkit-fill-available;
+    }
+    .running-img .content-title {
+        margin-top: -2.5rem;
+        font-size: 1rem;
+    }
+    .running-img > marquee {
+        max-width: 18em;
+        margin-top: -4rem;
+        margin-bottom: 1rem;
+    }
+        /* Iframe reference */
+        #legalities-body p {
+            margin: 0;
+            font-size: 1rem;
+        }
+        #legalities-body > .legalities {
+            padding: 0;
+        }
+        /* Iframe reference */
+    /* about.html */
+
+    /* project.html */
+    #carouselExampleCaptions iframe {
+        width: -webkit-fill-available;
+    }
+        /* ALL Iframe references from project.html */
+        #machine-body h1, #product-body h1, #service-body h1  {
+            font-size: 2rem;
+            margin: 1rem auto;
+        }
+        #machine-body p, #product-body p, #service-body p {
+            font-size: 1rem;
+        }
+        /* ALL Iframe references from project.html */
+
+    /* project.html */
 }

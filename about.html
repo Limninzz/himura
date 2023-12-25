@@ -3,153 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Best Organization Tree">
-    <meta name="keywords" content="Direktur, Herwanto">
+    <meta name="description" content="General Suplier, Fabrication, Preventive, Rewinding Spesial Pupose Machine, Special Custom Part Pneumatic, Hydrolic, Electrical">
+    <meta name="keywords" content="Himura, Herwanto">
     <meta name="author" content="Himura">
     <title>About</title>
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./assets/css/stylesheet.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/responsive.css">
     <link rel="shortcut icon" href="./assets/img/LogoOpac.png" type="image/x-icon">
 </head>
-<style>
-.index-title {
-  background-image: url(./assets/img/about-us.png);
-}
-.index-logo.title {
-  width: 150px;
-  position: relative;
-}
-.index-logo.title:hover {
-  filter: none;
-  top: 10px;
-  left: 10px;
-}
-.orgTree img {
-    width: 65%;
-}
-.legalities > p {
-  padding-left: 5.5em;
-}
-.legalities > iframe {
-    width: 42rem;
-    height: 60vh;
-    border: 2px solid aqua;
-}
-iframe {
-  border-radius: 15px;
-}
-.facility > img {
-    width: 50%;
-    border-radius: 10px;
-}   
-.location {
-  text-align: center;
-}
-.running-img {
-  position: relative;
-  bottom: 60%;
-  right: 0;
-  left: 18em;
-  text-align: center;
-}
-.running-img > marquee {
-  background: #c0c0c094;
-  border-radius: 15px;
-  max-width: 55em;
-}
-marquee > * {
-  padding: 0 20px;
-}
-#history > img {
-  position: relative;
-  z-index: 1;
-  top: 5em;
-  width: 100%;
-  left: 20px;
-}
-</style>
-<body onload="playsound()" style="overflow-x:hidden;">
+<body id="about-body" onload="playsound()">
   <header>
-    <audio id="myaudio" autoplay loop controls hidden>
+    <!-- <audio id="myaudio" autoplay loop controls hidden>
       <source src="./assets/backsound.mp3" type="audio/mpeg">
-    </audio>
+    </audio> -->
     <nav class="navbar">
       <div class="header-left">
-        <div>
+        <div id="header-title">
           <a href="index.html"><p>HIMURA</p></a>
         </div>
-        <span class="fa fa-bars menu-icon">
-        </span>
+      </div>
+      <div class="header-mid">
+        <a href="index.html">Beranda</a>
+        <a href="project.html">Proyek Kami</a>
       </div>
       <div class="header-right">
         <div class="header-right-menu">
-          <a href="about.html">Tentang Kami</a>
+          <a href="index.html">beranda</a>
           <a href="project.html">Proyek Kami</a>
         </div>
-        <a href="index-en.html" class="btn-lang eng"><img src="./assets/img/engFlag.png" alt="Eng Flag.png"></a>
+        <div>
+          <a href="index-en.html" class="btn-lang eng"><img src="./assets/img/engFlag.png" alt="Eng Flag.png"></a>
+        </div>
       </div>
     </nav>
   </header>
-  <div class="index-title">
-    <div class="legalities">
-      <p class="content-title">OUR LEGALITIES</p> <br>
-      <iframe src="./references/legalities.html" frameborder="0"></iframe>
-    </div><br>
-    <div class="running-img">
-      <img class="index-logo title" src="./assets/img/LogoOpac.png" alt="CompnayLogo.png" style="padding:0" onclick="showHistory()"><br><br><br>
-      <p class="content-title">TRUSTED BUSINESS PARTNERS</p><br><br><br>
-      <marquee behavior="scroll" direction="left">
-        <img class="img-1" src="./assets/img/logoPartner/elastomix.png" width="120" height="80" alt="elastomix.png" />
-        <img class="img-2" src="./assets/img/logoPartner/fineSinter.png" width="120" height="80" alt="fineSinter.png" />
-        <img class="img-3" src="./assets/img/logoPartner/glovis.png" width="240" height="60" alt="glovis.png" style="margin-bottom: 10px"/>
-        <img class="img-5" src="./assets/img/logoPartner/haritsindo.png" width="120" height="80" alt="haritsindo.png" />
-        <img class="img-6" src="./assets/img/logoPartner/nipponSteel.png" width="240" height="80" alt="nipponSteel.png" />
-        <img class="img-7" src="./assets/img/logoPartner/oneject.png" width="120" height="80" alt="oneject.png" />
-        <img class="img-8" src="./assets/img/logoPartner/yamaha.png" width="240" height="80" alt="yamaha.png" />
-        <img class="img-4" src="./assets/img/logoPartner/hyundaiTransys.png" width="240" height="80" alt="hyundaiTransys.png" />
-        <img class="img-9" src="./assets/img/logoPartner/wilmar.png" width="120" height="80" alt="wilmar.png" />
-        <img class="img-10" src="./assets/img/logoPartner/wika.png" width="120" height="80" alt="wika.png" />
-        <img class="img-11" src="./assets/img/logoPartner/rhino.png" width="120" height="80" alt="rhino.png" />
-        <img class="img-12" src="./assets/img/logoPartner/tjokro.png" width="120" height="80" alt="tjokro.png" />
-        <img class="img-13" src="./assets/img/logoPartner/srm.png" width="120" height="80" alt="srm.png" />
-        <img class="img-14" src="./assets/img/logoPartner/glicoWings.png" width="240" height="80" alt="glicoWings.png" />
-      </marquee>
-    </div>
-  </div><br>
-  <div id="history" class="cover-banner" style="height:120%; display:none;">
-    <img src="./assets/img/history.png" alt="history.png" onclick="hideHistory()">
-  </div><br><br>
-  <footer>
-    <div class="summary global">
-      <div class="summary-title global">
-        <img class="index-logo" src="./assets/img/LogoOpac.png" alt="CompnayLogo.png">
-        <h1 class="judul global">PT HIMURA ENGINEERING INDONESIA</h1>
+  <div id="about-container">
+    <div class="about-content row">
+      <div class="legalities col-12 col-md-6">
+        <iframe id="legalities" src="./references/legalities.html" frameborder="0"></iframe>
       </div>
-      <p>
-          General Suplier, Fabrication, Preventive, Overhould, Rewinding
-          Spesial Pupose Machine, Special Custom Part
-          Pneumatic, Hydrolic, Electrical
-      </p>
-    </div>
-    <div class="rounded-social-buttons global">
-      <div>
-        <a class="social-button whatsapp" href="https://wa.me/+6287779055387" target="_blank"><i class="fab fa-whatsapp"></i></a>
-        <p>+62 877 7905 5387 / +62 851 5969 0059</p>
+      <div class="running-img col-12 col-md-6">
+        <img class="about-logo web" src="./assets/img/LogoOpac.png" alt="CompnayLogo.png" onclick="showHistory()">
+        <img class="about-logo mobile" src="./assets/img/LogoOpac.png" alt="CompnayLogo.png" onclick="showHistory_mobile()" style="display: none;">
+        <br><br><br>
+        <p class="content-title highlight">TRUSTED BUSINESS PARTNERS</p><br><br><br>
+        <marquee behavior="scroll" direction="left">
+          <img class="img-1" src="./assets/img/logoPartner/elastomix.png" width="120" height="80" alt="elastomix.png" />
+          <img class="img-2" src="./assets/img/logoPartner/fineSinter.png" width="120" height="80" alt="fineSinter.png" />
+          <img class="img-3" src="./assets/img/logoPartner/glovis.png" width="240" height="60" alt="glovis.png" style="margin-bottom: 10px"/>
+          <img class="img-5" src="./assets/img/logoPartner/haritsindo.png" width="120" height="80" alt="haritsindo.png" />
+          <img class="img-6" src="./assets/img/logoPartner/nipponSteel.png" width="240" height="80" alt="nipponSteel.png" />
+          <img class="img-7" src="./assets/img/logoPartner/oneject.png" width="120" height="80" alt="oneject.png" />
+          <img class="img-8" src="./assets/img/logoPartner/yamaha.png" width="240" height="80" alt="yamaha.png" />
+          <img class="img-4" src="./assets/img/logoPartner/hyundaiTransys.png" width="240" height="80" alt="hyundaiTransys.png" />
+          <img class="img-9" src="./assets/img/logoPartner/wilmar.png" width="120" height="80" alt="wilmar.png" />
+          <img class="img-10" src="./assets/img/logoPartner/wika.png" width="120" height="80" alt="wika.png" />
+          <img class="img-11" src="./assets/img/logoPartner/rhino.png" width="120" height="80" alt="rhino.png" />
+          <img class="img-12" src="./assets/img/logoPartner/tjokro.png" width="120" height="80" alt="tjokro.png" />
+          <img class="img-13" src="./assets/img/logoPartner/srm.png" width="120" height="80" alt="srm.png" />
+          <img class="img-14" src="./assets/img/logoPartner/glicoWings.png" width="240" height="80" alt="glicoWings.png" />
+        </marquee>
       </div>
-      <div>
-        <a class="social-button envelope" href="mailto:sales@himura.com" target="_blank"><i class="fas fa-envelope"></i></a>      
-        <p>sales@himura.co.id</p>
+      <div id="history" class="cover-banner" style="height:120%; display:none;">
+        <img src="./assets/img/history.png" alt="history.png" onclick="hideHistory()">
       </div>
-      <div>
-        <a class="social-button location" href="#" target="_blank"><i class="fas fa-map-marker-alt"></i></a>      
-        <p>Citra Swarna Pratama Blok A4 No. 11
-        Desa Bengle - Majalaya - Karawang</p>
+      <div id="history_mobile" class="cover-banner" style="height:120%; display:none;">
+        <img src="./assets/img/history2.png" alt="history2.png" onclick="hideHistory_mobile()">
       </div>
     </div>
-    <div class="footer-info">
-    </div>
-    <div class="location">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d495.69251938374185!2d107.34499006357537!3d-6.323965217600796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e696d16348d4aed%3A0x4ce930a6611234c5!2sPT%20HIMURA%20ENGINEERING%20INDONESIA!5e0!3m2!1sid!2sid!4v1700662853710!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <footer class="row">
+    <div class="footer-container row col-md-12">
+      <div class="footer-left col-md-5">
+        <div class="footer-title">
+          <img class="footer-logo" src="./assets/img/LogoOpac.png" alt="CompnayLogo.png">
+          <h1 class="judul-footer">PT HIMURA ENGINEERING INDONESIA</h1>
+        </div>
+        <div>
+          <p class="footer-highlight">
+            General Suplier, Fabrication, Preventive, Overhould, Rewinding
+            Spesial Pupose Machine, Special Custom Part
+            Pneumatic, Hydrolic, Electrical
+        </p>
+        </div>
+      </div>
+      <div class="rounded-social-buttons global footer-mid col-12 col-md-4">
+        <div>
+          <a class="social-button whatsapp" href="https://wa.me/+6287779055387" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          <p>+62 877 7905 5387 / +62 851 5969 0059</p>
+        </div>
+        <div>
+          <a class="social-button envelope" href="mailto:sales@himura.com" target="_blank"><i class="fas fa-envelope"></i></a>      
+          <p>sales@himura.co.id</p>
+        </div>
+        <div>
+          <a class="social-button location" href="#" target="_blank"><i class="fas fa-map-marker-alt"></i></a>      
+          <p>Citra Swarna Pratama Blok A4 No. 11
+          Desa Bengle - Majalaya - Karawang</p>
+        </div>
+      </div>
+      <div class="location footer-right col-12 col-md-3">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d495.69251938374185!2d107.34499006357537!3d-6.323965217600796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e696d16348d4aed%3A0x4ce930a6611234c5!2sPT%20HIMURA%20ENGINEERING%20INDONESIA!5e0!3m2!1sid!2sid!4v1700662853710!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </div>
   </footer>
 </body>
@@ -166,6 +122,35 @@ hideHistory = () => {
 let history = document.getElementById("history"); 
 history.style.display = "none";
 }
+showHistory_mobile = () => {
+let history_mobile = document.getElementById("history_mobile"); 
+history_mobile.style.display = "block";
+}
+hideHistory_mobile = () => {
+let history_mobile = document.getElementById("history_mobile"); 
+history_mobile.style.display = "none";
+}
 </script>
-<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script> 
+<!-- Bootstrap -->
+<script 
+  src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" 
+  integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" 
+  crossorigin="anonymous">
+</script>
+<script 
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" 
+  integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" 
+  crossorigin="anonymous">
+</script>
+<script 
+  defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" 
+  integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" 
+  crossorigin="anonymous">
+</script>
+<!-- Font Awesome -->
+<script 
+  defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" 
+  integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" 
+  crossorigin="anonymous">
+</script> 
 </html>
