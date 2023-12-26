@@ -223,7 +223,7 @@ border-color: rgb(216, 31, 36);
 
 /* --index.html-- */
 #index-body {
-overflow-y: hidden;
+/* overflow-y: hidden; */
 display: flex;
 flex-direction: column;
 }
@@ -253,7 +253,7 @@ width: 200px;
 filter: drop-shadow(10px 10px 1px black);
 }
 .judul {
-padding-left: 10px;
+padding-left: 1rem;
 font-size: 70px;
 filter: drop-shadow(5px 5px 1px black);
 /* max-width: 55rem; */
@@ -362,6 +362,7 @@ text-align: center;
 background: #c0c0c094;
 border-radius: 15px;
 max-width: 55em;
+margin-bottom: 1rem;
 }
 marquee > * {
 padding: 0 20px;
@@ -395,5 +396,25 @@ margin-right: auto;
 width: 110rem;
 height: 50rem;
 }
+    /* ALL Iframe references of project.html (legalities,machine,product.html) */
+    .wadah {
+        display:flex; 
+        justify-content: space-evenly;
+      }
+      .wadah img, .wadah video {
+        width: 16rem;
+        border-radius: 10px;
+        transition: 0.5s;
+        border: 2px solid aquamarine;
+        filter: drop-shadow(5px 5px 5px aqua);
+        height: 15rem;
+      }
+      .wadah img:hover {
+        transform: translateY(15px);
+      }
+      .wadah p {
+        font-size: 20px
+      }
+      /* ALL Iframe references of project.html (legalities,machine,product.html) */
 
 /* --END OF project.html-- */

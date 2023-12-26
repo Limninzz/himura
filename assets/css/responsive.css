@@ -27,6 +27,7 @@
     .footer-mid > div {
         align-items: center;
         gap: 25px;
+        margin: auto 0;
     }
     .footer-mid > div > p {
         margin: 0;
@@ -56,7 +57,7 @@
         left: 2rem;
     }
     .judul {
-        font-size: 1.5rem;
+        font-size: 1rem;
         /* left: -3rem; */
         position: relative;
     }
@@ -81,7 +82,8 @@
         justify-content: center;
         gap: 1rem;
         filter: drop-shadow(1px 1px 10px aqua);
-        margin: 1rem;
+        margin: 1rem auto;
+        max-width: 17em;
     }
     .frame {
         padding: 0 0.5rem;
@@ -110,7 +112,7 @@
         padding-top: 3rem;
     }
     #legalities {
-        width: 20rem;
+        width: 18.5rem;
         height: 35vh;
     }
     .about-logo {
@@ -125,6 +127,8 @@
     }
     #history_mobile > img {
         width: -webkit-fill-available;
+        position: relative;
+        z-index: 1;
     }
     .running-img .content-title {
         margin-top: -2.5rem;
@@ -132,8 +136,9 @@
     }
     .running-img > marquee {
         max-width: 18em;
-        margin-top: -4rem;
-        margin-bottom: 1rem;
+    }
+    .running-img > marquee:nth-child(2) {
+        margin-bottom: 3rem;
     }
         /* Iframe reference */
         #legalities-body p {
@@ -151,7 +156,7 @@
         width: -webkit-fill-available;
     }
         /* ALL Iframe references from project.html */
-        #machine-body h1, #product-body h1, #service-body h1  {
+        #machine-body h1, #product-body h1, #service-body h1, #legalities-body h1  {
             font-size: 2rem;
             margin: 1rem auto;
         }
