@@ -78,7 +78,7 @@ width: 35px;
 footer {
 display: flex;
 position: absolute;
-bottom: 0;
+/* bottom: 0; */
 align-items: center;
 background-color: rgb(70 73 75);
 gap: 5px;
@@ -232,13 +232,13 @@ flex-direction: column;
 background-image: url(../img/top-section-bg.png);
 display: flex;
 flex-direction: column;
-margin: auto 5rem;
+margin: 5rem;
 background-size: contain;
 background-repeat: no-repeat;
 }
 .index-title {
 position: relative;
-padding-top: 10rem;
+/* padding-top: 10rem; */
 display: flex;
 flex-direction: row;
 align-items: center;
@@ -254,7 +254,7 @@ filter: drop-shadow(10px 10px 1px black);
 }
 .judul {
 padding-left: 1rem;
-font-size: 70px;
+font-size: clamp(0.938rem, 4.167vw + -0.625rem, 4.375rem);
 filter: drop-shadow(5px 5px 1px black);
 /* max-width: 55rem; */
 }
@@ -264,19 +264,19 @@ filter: drop-shadow(5px 5px 1px black);
 .index-content {
 display: flex;
 justify-content: center;
-gap: 10rem;
+gap: 2rem;
 }
 .index-aboutme {
 max-width: 55em;
 border: 1px solid aqua;
 border-radius: 15px;    
-backdrop-filter: saturate(0.5);
+background: #32586d;
 box-shadow: 0 0 50px 15px #48abe0;;
 }
 .index-aboutme > .highlight {
 padding:10px 35px; 
 text-align:justify;
-font-size: 25px;
+font-size: clamp(0.875rem, 0.833vw + 0.563rem, 1.563rem);;
 filter: drop-shadow(1px 2px 1px black);
 }
 .proyek {
@@ -289,9 +289,14 @@ text-align: center;
 font-size: 35px;
 display: none;
 }
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .menu > a > * {
-width: 128px;
-height: 170px;
+width: clamp(5.75rem, 2.727vw + 4.727rem, 8rem);
+height: clamp(8rem, 3.182vw + 6.807rem, 10.625rem);
 transition: 0.5s;
 }
 .menu > a > *:hover {
@@ -384,6 +389,7 @@ overflow-x:hidden;
 bottom: unset;
 }
 #carouselExampleCaptions {
+margin-top: 1rem;
 max-width: 110rem;
 max-height: 60rem;
 margin-left: auto;
@@ -395,6 +401,10 @@ margin-right: auto;
 #carouselExampleCaptions iframe{
 width: 110rem;
 height: 50rem;
+}
+.carousel-btn, .carousel-indicators >  * {
+  filter: drop-shadow(5px 1px 0px black);
+  padding: 2rem;
 }
     /* ALL Iframe references of project.html (legalities,machine,product.html) */
     .wadah {

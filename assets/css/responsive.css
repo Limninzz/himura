@@ -23,6 +23,7 @@
     }
     .footer-mid {
         gap: 0rem;
+        margin: 1rem auto;
     }
     .footer-mid > div {
         align-items: center;
@@ -40,6 +41,7 @@
     .row {
         --bs-gutter-x: 0rem;
     }
+    /* GENERAL STYLING */
 
     /*index.html*/ 
     #index-body {
@@ -55,9 +57,10 @@
         width: 5rem;
         position: relative;
         left: 2rem;
+        filter: drop-shadow(5px 5px 1px black);
     }
     .judul {
-        font-size: 1rem;
+        /* font-size: 1rem; */
         /* left: -3rem; */
         position: relative;
     }
@@ -70,7 +73,7 @@
     }
     .index-aboutme > p{
         padding: 5px 10px !important;
-        font-size: 14px !important;
+        /* font-size: 14px !important; */
         margin: auto;
     }
     #social-button {
@@ -94,13 +97,12 @@
     .proyek {   
         justify-content: center;
     }
-    .menu > a > * {
+    /* .menu > a > * {
         width: 5.75rem;
         height: 8rem;
-    }
+    } */
     .index-summary {
         font-size: 1rem;
-        margin-top: -4rem;
     }
     /*index.html*/
 
@@ -166,4 +168,34 @@
         /* ALL Iframe references from project.html */
 
     /* project.html */
+}
+
+@media only screen and (min-width: 768px) {
+    /* GENERAL STYLING */
+
+    /* GENERAL STYLING */
+    /* index.html */
+    .index-content {
+        gap: 0;
+        margin-top: 1rem;
+    }
+    /* index.html */
+}
+    
+@media only screen and (min-width: 1700px) {
+    /* GENERAL STYLING */
+    footer {
+        bottom: 0;
+    }
+    /* GENERAL STYLING */
+
+    /* index.html */
+    .index-container {
+        background-size: cover;
+    }
+    /* index.html */
+    
+    /* about.html */
+
+    /* about.html */
 }
